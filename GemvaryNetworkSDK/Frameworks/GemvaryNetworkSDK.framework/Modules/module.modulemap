@@ -1,0 +1,11 @@
+framework module GemvaryNetworkSDK {
+  umbrella header "GemvaryNetworkSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module GemvaryNetworkSDK.Swift {
+  header "GemvaryNetworkSDK-Swift.h"
+  requires objc
+}

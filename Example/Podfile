@@ -2,6 +2,11 @@ use_frameworks!
 
 platform :ios, '10.0'
 
+# 指定开源库的下载源（组件化开发时会用到）
+source 'https://github.com/CocoaPods/Specs.git'
+#source 'http://192.192.0.118:3000/songmenglong/GemvarySpecs.git'
+source 'https://github.com/Gemvary/GemvarySpec.git'
+
 target 'GemvaryNetworkSDK_Example' do
   pod 'GemvaryNetworkSDK', :path => '../'
 

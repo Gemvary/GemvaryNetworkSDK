@@ -21,16 +21,23 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/songmenglong/GemvaryNetworkSDK'
+  s.homepage         = 'https://github.com/Gemvary/GemvaryNetworkSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'songmenglong' => 'songmenglong@gemvary.com' }
-  s.source           = { :git => 'https://github.com/songmenglong/GemvaryNetworkSDK.git', :tag => s.version.to_s }
+  s.author           = { 'songmenglong' => 'apple@gemvary.com' }
+  s.source           = { :git => 'https://github.com/Gemvary/GemvaryNetworkSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'GemvaryNetworkSDK/Classes/**/*'
+  #s.source_files = 'GemvaryNetworkSDK/Classes/**/*'
+  s.vendored_frameworks = "GemvaryNetworkSDK/Frameworks/*.framework"
+
+  s.swift_versions = ['5.0']
+
+  s.dependency 'Alamofire'
+  # 本地依赖 通用工具类
+  s.dependency 'GemvaryToolSDK'
   
   # s.resource_bundles = {
   #   'GemvaryNetworkSDK' => ['GemvaryNetworkSDK/Assets/*.png']

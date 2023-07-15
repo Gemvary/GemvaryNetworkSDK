@@ -1,5 +1,5 @@
 import XCTest
-import GemvaryNetworkSDK
+//import GemvaryNetworkSDK
 
 class Tests: XCTestCase {
     

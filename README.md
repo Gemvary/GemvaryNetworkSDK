@@ -20,6 +20,22 @@ it, simply add the following line to your Podfile:
 pod 'GemvaryNetworkSDK'
 ```
 
+
+```shell
+git branch -M main
+
+git push -u origin main
+
+pod spec lint --sources='https://github.com/Gemvary/GemvarySpec.git,https://github.com/CocoaPods/Specs.git' --allow-warnings --verbose --use-libraries --skip-import-validation --no-clean
+
+pod spec lint --sources='https://github.com/Gemvary/GemvarySpec.git,https://github.com/CocoaPods/Specs.git' --allow-warnings --verbose --use-libraries --skip-import-validation --no-clean
+
+
+pod repo push GemvarySpec GemvaryNetworkSDK.podspec --allow-warnings --verbose --skip-import-validation
+
+```
+
+
 ## Author
 
 songmenglong, songmenglong@gemvary.com
