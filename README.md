@@ -26,6 +26,8 @@ git branch -M main
 
 git push -u origin main
 
+git push --tags
+
 pod spec lint --sources='https://github.com/Gemvary/GemvarySpec.git,https://github.com/CocoaPods/Specs.git' --allow-warnings --verbose --use-libraries --skip-import-validation --no-clean
 
 pod spec lint --sources='https://github.com/Gemvary/GemvarySpec.git,https://github.com/CocoaPods/Specs.git' --allow-warnings --verbose --use-libraries --skip-import-validation --no-clean
