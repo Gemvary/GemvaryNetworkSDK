@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GemvaryNetworkSDK'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of GemvaryNetworkSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   #s.source_files = 'GemvaryNetworkSDK/Classes/**/*'
   s.vendored_frameworks = "GemvaryNetworkSDK/Frameworks/*.framework"
 
-  s.swift_versions = ['5.0']
+#  s.swift_versions = ['5.0']
 
   s.dependency 'Alamofire'
   # 本地依赖 通用工具类
